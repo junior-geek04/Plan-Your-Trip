@@ -1,0 +1,336 @@
+img {
+  max-width: 100%;
+}
+
+.cards2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+
+  margin: 1em auto;
+}
+
+.card2 {
+  display: grid;
+
+  grid-template-rows: max-content 200px 1fr;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.card2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card2 h2 {
+  margin: 0;
+  padding: .5rem;
+}
+
+.card2 .content {
+  padding: .5rem;
+}
+
+.card2 footer {
+  background-color: #333;
+  color: #fff;
+  padding: .5rem;
+}
+
+#news-pdfs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20vw;
+  min-height: 400px;
+  margin: 20px 5vw;
+  row-gap: 20px;
+}
+
+#news-pdfs #new-links {
+  display: block;
+  position: relative;
+  height: 350px;
+  width: 40%;
+  min-width: 320px;
+  overflow-y: hidden;
+  background-color: #ffffff;
+}
+
+#news-pdfs #new-links #heading {
+  font-size: 18px;
+  color: #252638;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#news-pdfs #new-links #design {
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 4px;
+          column-gap: 4px;
+}
+
+#news-pdfs #new-links #design #q1 {
+  height: 4px;
+  width: 6px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #new-links #design #q2 {
+  height: 4px;
+  width: 30px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #new-links #design #q3 {
+  height: 4px;
+  width: 6px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links {
+  display: block;
+  position: relative;
+  height: 400px;
+  width: 40%;
+  min-width: 320px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#news-pdfs #pdf-links #heading {
+  font-size: 18px;
+  color: #252638;
+  text-align: center;
+  font-weight: 600;
+}
+
+#news-pdfs #pdf-links #design {
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 4px;
+          column-gap: 4px;
+}
+
+#news-pdfs #pdf-links #design #q1 {
+  height: 4px;
+  width: 6px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links #design #q2 {
+  height: 4px;
+  width: 30px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links #design #q3 {
+  height: 4px;
+  width: 6px;
+  background-color: #e31e2f;
+}
+
+#news-pdfs #pdf-links #pdf-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  margin-top: 20px;
+}
+
+#news-pdfs #pdf-links #pdf-container ul {
+  margin-left: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+#news-pdfs #pdf-links #pdf-container ul li {
+  width: 94%;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#news-pdfs #pdf-links #pdf-container ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+#news-pdfs #pdf-links #pdf-container ul li:hover a {
+  color: #e31e2f;
+}
+
+#news-pdfs #pdf-links .pdf-modal-btn {
+  position: absolute;
+margin-top: 3%;
+  width: 90%;
+  text-align: center;
+  border: none;
+ 
+  height: 40px;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #252638;
+}
+
+#news-pdfs #pdf-links .pdf-modal-btn span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#news-pdfs #pdf-links .pdf-modal-btn:hover {
+  border-radius: 50px;
+}
+
+#news-pdfs #pdf-links .pdf-modal-btn:hover span {
+  letter-spacing: 2px;
+}
+
+#news-pdfs #pdf-links .pdf-modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  top: 0;
+  left: -20px;
+  width: calc(100% + 50px);
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 10;
+  display: none;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#news-pdfs #pdf-links .pdf-modal .pdf-modal-close {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  margin: 10px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 35px;
+  cursor: pointer;
+  
+}
+
+#news-pdfs #pdf-links .pdf-modal .pdf-modal-close i{
+  color: white;
+  background-color: transparent;
+}
+
+#news-pdfs #pdf-links .pdf-modal .pdf-modal-close i:hover{
+  color: #e31e2f;
+}
+
+
+#news-pdfs #pdf-links .pdf-modal #pdf-modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 50px;
+  width: 80%;
+  margin: 60px auto;
+  row-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+#news-pdfs #pdf-links .pdf-modal #pdf-modal-content #modal-pdf {
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 30px;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+#news-pdfs #pdf-links .pdf-modal #pdf-modal-content #modal-pdf a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+#news-pdfs #pdf-links .pdf-modal #pdf-modal-content #modal-pdf:hover a {
+  color: #e31e2f;
+  font-size: 15px;
+}
+
+
+/* begg2 */
+
+/* end2 */
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 750px) {
+  #news-pdfs #pdf-links{
+    width: 100%;
+  }
+  #news-pdfs #new-links{
+    width: 100%;
+  }
+}
